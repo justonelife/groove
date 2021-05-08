@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+$main-color: #e74c3c;
+$main-color--text: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
