@@ -1,0 +1,72 @@
+@use '../../../../../styles.scss';
+
+.volume-slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    background: styles.$main-color--text;
+    background-image: linear-gradient(styles.$second-color, styles.$second-color);;
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        cursor: pointer;
+        background-color: styles.$main-color--text;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: styles.$second-color;
+
+        transition: background-color .2s ease, border-color .2s ease;
+        &:hover {
+            background-color: styles.$second-color;
+            border-color: styles.$main-color--text;
+        }
+    }
+    &::-moz-range-thumb {
+        -webkit-appearance: none;
+        cursor: pointer;
+        background-color: styles.$main-color--text;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: styles.$second-color;
+
+        transition: background-color .2s ease, border-color .2s ease;
+        &:hover {
+            background-color: styles.$second-color;
+            border-color: styles.$main-color--text;
+        }
+    }
+    &::-ms-thumb {
+        -webkit-appearance: none;
+        cursor: pointer;
+        background-color: styles.$main-color--text;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: styles.$second-color;
+
+        transition: background-color .2s ease, border-color .2s ease;
+        &:hover {
+            background-color: styles.$second-color;
+            border-color: styles.$main-color--text;
+        }
+    }
+    &::-webkit-slider-runnable-track,
+    &::-moz-range-track,
+    &::-ms-track {
+        -webkit-appearance: none;
+        background: transparent;
+    }
+}

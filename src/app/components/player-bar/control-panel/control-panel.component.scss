@@ -1,10 +1,12 @@
 .control-panel {
     height: 100%;
     width: 100%;
-    background: orange;
     display: flex;
     &__volume, &__main {
         flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__main {
         background: blue;
