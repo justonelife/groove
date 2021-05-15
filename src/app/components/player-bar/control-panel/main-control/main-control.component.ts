@@ -5,7 +5,8 @@ import {
   faStepForward,
   faHeart,
   faRandom,
-  faUndo 
+  faUndo,
+  faPause 
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -15,10 +16,10 @@ import {
 })
 export class MainControlComponent implements OnInit {
 
-  playIcon = faPlay;
   backward = faStepBackward;
   forward = faStepForward;
   like = faHeart;
+  public playStatus = faPlay;
   public playMode = faRandom;
   public liked: Boolean = false;
 
@@ -28,13 +29,21 @@ export class MainControlComponent implements OnInit {
   }
 
   onSwitchPlayMode(): void {
-    this.playMode = this.playMode == faRandom
-      ? faUndo
-      : faRandom; 
+    this.onSwitchMode('playMode', faRandom, faUndo);
   }
 
   onToggleLike(): void {
     this.liked = !this.liked;
+  }
+
+  onPlayStatusSwitch(): void {
+    this.onSwitchMode('playStatus', faPlay, faPause);
+  }
+
+  onSwitchMode(currentMode: string, modeA: any, modeB: any): void {
+    this[currentMode] = this[currentMode] == modeA
+      ? modeB
+      : modeA;
   }
 
 }

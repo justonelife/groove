@@ -7,8 +7,9 @@
     <button class='main-control__button main-control__button--small main-control__button--transparent'>
         <fa-icon [icon]='backward'></fa-icon>
     </button>
-    <button class='main-control__button main-control__button--big main-control__button--circle'>
-        <fa-icon [icon]='playIcon'></fa-icon>
+    <button class='main-control__button main-control__button--big main-control__button--circle'
+        (click)='onPlayStatusSwitch()'>
+        <fa-icon [icon]='playStatus'></fa-icon>
     </button>
     <button class='main-control__button main-control__button--small main-control__button--transparent'>
         <fa-icon [icon]='forward'></fa-icon>
