@@ -1,18 +1,20 @@
 @use '../../../styles.scss';
 
+$height: 80px;
+
 .player-bar {
     background: styles.$main-color;
     color: styles.$main-color--text;
-    height: 50px;
+    height: $height;
     width: 100%;
     position: fixed;
     bottom: 0;
     display: flex;
     &__control-panel {
-        flex-grow: 2;
-    }
-    .mini-playing-list {
         flex-grow: 1;
+    }
+    &__function-bar {
+        flex-grow: 2;
     }
     .developing-area {
         flex-grow: 1;
