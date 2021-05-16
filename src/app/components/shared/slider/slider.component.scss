@@ -1,0 +1,89 @@
+@use '../../../../styles.scss';
+
+$thumb-size: 12px;
+// $thumb-size--hover: 15px;
+
+$volume-height: 6px;
+$volume-height--hover: 9px;
+$volume-box-shadow: 0;
+$volume-box-shadow--hover: 0 0 6px 5px rgba(255, 255, 255, .4);
+
+.volume-slider {
+    display: block;
+    width: 100%;
+    height: $volume-height;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    background: styles.$main-color--text;
+    background-image: linear-gradient(styles.$second-color, styles.$second-color);
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: $volume-box-shadow;
+    transition: all .2s ease;
+    &:hover {
+        background-image: linear-gradient(styles.$second-color--dark, styles.$second-color--dark);
+        height: $volume-height--hover;
+        box-shadow: $volume-box-shadow--hover;
+    }
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        cursor: pointer;
+        background-color: styles.$main-color--text;
+        height: $thumb-size;
+        width: $thumb-size;
+        border-radius: 50%;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: styles.$second-color;
+
+        transition: all .2s ease;
+        &:hover {
+            background-color: styles.$second-color;
+            border-color: styles.$main-color--text;
+        }
+    }
+    &::-moz-range-thumb {
+        -webkit-appearance: none;
+        cursor: pointer;
+        background-color: styles.$main-color--text;
+        height: $thumb-size;
+        width: $thumb-size;
+        border-radius: 50%;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: styles.$second-color;
+
+        transition: all .2s ease;
+        &:hover {
+            background-color: styles.$second-color;
+            border-color: styles.$main-color--text;
+        }
+    }
+    &::-ms-thumb {
+        -webkit-appearance: none;
+        cursor: pointer;
+        background-color: styles.$main-color--text;
+        height: $thumb-size;
+        width: $thumb-size;
+        border-radius: 50%;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: styles.$second-color;
+
+        transition: all .2s ease;
+        &:hover {
+            background-color: styles.$second-color;
+            border-color: styles.$main-color--text;
+        }
+    }
+    &::-webkit-slider-runnable-track,
+    &::-moz-range-track,
+    &::-ms-track {
+        -webkit-appearance: none;
+        background: transparent;
+    }
+}

@@ -2,11 +2,5 @@
     <button (click)='onToggleVolumeStatus()'>
         <fa-icon [icon]='volumeStatus'></fa-icon>
     </button>
-    <input
-        #volumeSlider
-        class='volume-slider'
-        type='range' 
-        min='0' 
-        max='100'
-        value='30'>
+    <app-slider [widthSize]='sliderWidth'></app-slider>
 </div>
