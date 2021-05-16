@@ -2,12 +2,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-    &__volume {
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    &__volume, 
     &__main {
         flex-grow: 1;
     }
