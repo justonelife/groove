@@ -31,6 +31,7 @@ export class MainControlComponent implements OnInit {
   onSwitchPlayMode(): void {
     this.onSwitchModeCircle
       .apply(this, ['playMode', 'shuffle', 'repeat', 'repeat_one']);
+    // *arguments [properties, option1, option2,...optionN]
   }
 
   onToggleLike(): void {
