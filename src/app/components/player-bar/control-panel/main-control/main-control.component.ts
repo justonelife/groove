@@ -20,7 +20,7 @@ export class MainControlComponent implements OnInit {
   forward = faStepForward;
   like = faHeart;
   public playStatus = faPlay;
-  public playMode = faRandom;
+  public playMode: string = 'shuffle';
   public liked: Boolean = false;
 
   constructor() { }
@@ -29,7 +29,8 @@ export class MainControlComponent implements OnInit {
   }
 
   onSwitchPlayMode(): void {
-    this.onSwitchMode('playMode', faRandom, faUndo);
+    this.onSwitchModeCircle
+      .apply(this, ['playMode', 'shuffle', 'repeat', 'repeat_one']);
   }
 
   onToggleLike(): void {
@@ -44,6 +45,17 @@ export class MainControlComponent implements OnInit {
     this[currentMode] = this[currentMode] == modeA
       ? modeB
       : modeA;
+  }
+
+  onSwitchModeCircle(): void {
+    var properties: string = arguments[0];
+    var currentMode: any = this[properties];
+    for (var i = 1; i < arguments.length; i++) {
+      if (arguments[i] == currentMode) break;
+    }
+    var nextIndex = i + 1;;
+    if (nextIndex == arguments.length) nextIndex = 1;
+    this[properties] = arguments[nextIndex];
   }
 
 }
