@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideViewComponent implements OnInit {
 
+  public showSideView: Boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onToggleSideView(): void {
+    this.showSideView = !this.showSideView;
   }
 
 }
