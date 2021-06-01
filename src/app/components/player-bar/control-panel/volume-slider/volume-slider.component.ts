@@ -11,7 +11,6 @@ import {
 })
 export class VolumeSliderComponent implements OnInit {
 
-  public sliderWidth: number = 150;
   public volumeStatus = faVolumeUp;
 
   constructor() { }
