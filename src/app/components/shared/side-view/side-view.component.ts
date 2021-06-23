@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-side-view',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideViewComponent implements OnInit {
 
-  public showSideView: Boolean = false;
+  @Input() toggleBtnIcon: string;
+  public showSideView: Boolean = true;
 
   constructor() { }
 

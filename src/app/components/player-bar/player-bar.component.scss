@@ -10,15 +10,15 @@ $height: 80px;
     position: fixed;
     bottom: 0;
     display: flex;
-    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-top: 1px solid #484848;
     &__control-panel {
         flex-grow: 1;
     }
     &__function-bar {
-        flex-grow: 2;
+        flex-grow: 1;
     }
     .developing-area {
-        flex-grow: 1;
+        flex-grow: 3;
         background: styles.$second-color;
     }
 }
