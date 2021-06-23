@@ -1,0 +1,33 @@
+$height: 70px;
+$song-avatar-width: $height; //to make avatar look square
+$song-item-hover-bg: rgba(255, 255, 255, .24);
+
+.song-item {
+    display: grid;
+    grid-template-columns: $song-avatar-width auto;
+    height: $height;
+    grid-gap: 20px;
+    border-radius: 5px;
+    margin-bottom: 11px;
+    transition: background-color .7s ease;
+    &:hover {
+        cursor: pointer;
+        background-color: $song-item-hover-bg;
+    }
+    &__avatar {
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        padding: 6px;
+    }
+    &__info {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 0;
+        text-transform: capitalize;
+        small {
+            font-weight: normal;
+            margin-left: 6px;
+        }
+    }
+}

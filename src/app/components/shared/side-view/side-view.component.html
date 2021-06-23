@@ -1,7 +1,7 @@
 <div class='side-view'>
     <button class='side-view__toggle-btn'
         (click)='onToggleSideView()'>
-        <span class="material-icons md-18">queue_music</span>
+        <span class="material-icons md-18">{{ toggleBtnIcon }}</span>
     </button>
     <div class='side-view__content'
         [ngClass]="{'active': showSideView}">

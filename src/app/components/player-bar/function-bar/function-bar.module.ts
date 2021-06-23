@@ -3,19 +3,18 @@ import { CommonModule } from '@angular/common';
 import { FunctionBarComponent } from './function-bar.component';
 import { DurationModule } from './duration/duration.module';
 import { SharedModule } from '../../shared/shared.module';
-import { MiniListSongComponent } from './mini-list-song/mini-list-song.component';
-
+import { MiniListSongModule } from './mini-list-song/mini-list-song.module';
 
 
 @NgModule({
   declarations: [
-    FunctionBarComponent,
-    MiniListSongComponent
+    FunctionBarComponent
   ],
   imports: [
     CommonModule,
     DurationModule,
-    SharedModule
+    SharedModule,
+    MiniListSongModule
   ],
   exports: [
     FunctionBarComponent
