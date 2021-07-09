@@ -1,8 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ExploreComponent } from './components/explore/explore.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'explore', 
+    component: ExploreComponent,
+    pathMatch: 'full'
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

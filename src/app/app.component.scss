@@ -1,6 +1,15 @@
 @use '../styles.scss';
+@use './components/player-bar/player-bar.component.scss' as player;
+
+$main-height: calc(100vh - #{player.$height});
 
 .groove {
     background: styles.$app-bgColor;
-    height: 100vh;
+    height: $main-height;
+    display: grid;
+    grid-template-columns: 350px auto;
+    &__playground {
+        width: 100%;
+        height: $main-height;
+    }
 }

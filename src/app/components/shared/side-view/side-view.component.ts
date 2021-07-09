@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SideViewComponent implements OnInit {
 
   @Input() toggleBtnIcon: string;
-  public showSideView: Boolean = true;
+  public showSideView: Boolean = false;
 
   constructor() { }
 
