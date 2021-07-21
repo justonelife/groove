@@ -35,4 +35,48 @@ span.material-icons {
     &-li {
         list-style: none;
     }
+
+    &-btn {
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        background: #3498db;
+        color: #fff;
+        &--transparent {
+            background: transparent;
+        }
+        &--circle {
+            border-radius: 50%;
+        }
+        &--sync-theme {
+            background: $second-color;
+        }
+    }
+
+    &-fake-input {
+        height: 100%;
+        padding: 0 25px;
+        border-radius: 20px;
+        width: 530px;
+        input {
+            height: 100%;
+            width: 100%;
+            background: transparent;
+            color: #fff;
+            font-size: 19px;
+            &::placeholder {
+                font-size: 19px;
+                color: #ffffffc4;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        &--light-transparent {
+            background: rgba(255, 255, 255, .3);
+        }
+        &:focus-within {
+            background: $second-color;
+        }
+    }
 }

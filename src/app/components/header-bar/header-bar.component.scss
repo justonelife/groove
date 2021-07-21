@@ -1,0 +1,15 @@
+@import '~material-design-icons/iconfont/material-icons.css';
+
+$height: 70px;
+$left-right-btn-size: 50px;
+$user-area: 50px;
+
+.header {
+    height: $height;
+    display: grid;
+    grid-template-columns: $left-right-btn-size $left-right-btn-size auto $user-area;
+    align-content: space-evenly;
+    grid-gap: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+}

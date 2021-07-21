@@ -1,5 +1,6 @@
 @use '../styles.scss';
 @use './components/player-bar/player-bar.component.scss' as player;
+@use './components/header-bar/header-bar.component.scss' as header;
 
 $main-height: calc(100vh - #{player.$height});
 
@@ -7,9 +8,12 @@ $main-height: calc(100vh - #{player.$height});
     background: styles.$app-bgColor;
     height: $main-height;
     display: grid;
-    grid-template-columns: 350px auto;
+    grid-template-columns: 320px auto;
     &__playground {
         width: 100%;
         height: $main-height;
+        &__header {
+            height: header.$height;
+        }
     }
 }
