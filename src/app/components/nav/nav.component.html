@@ -3,11 +3,12 @@
         <img src='../../../assets/images/wolf.png' alt='logo'>
     </span>
     <ul class='nav__content m-mt-30'>
-        <li class='m-li m-mb-10'>
-            <a class='nav__item nav__item--active' routerLink='/explore'>explore</a>
-        </li>
-        <li class='m-li m-mb-10'>
-            <a class='nav__item'>personal</a>
+        <li *ngFor='let item of navigate' class='m-li m-mb-10'>
+            <a class='nav__item' 
+                routerLink='{{item.path}}'
+                routerLinkActive='nav__item--active'>
+                {{item.name}}
+            </a>
         </li>
     </ul>
 </div>

@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  public navigate = [
+    { name: 'explore', path: '/explore' },
+    { name: 'personal', path: '/personal'}
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
