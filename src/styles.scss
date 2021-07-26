@@ -20,6 +20,25 @@ span.material-icons {
     display: block;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    /* Track */
+    &-track {
+        background: transparent; 
+    }
+
+    /* Handle */
+    &-thumb {
+        background: #7d7a7a;
+        border-radius: 10px;
+        transition: background .2s ease;
+        &:hover {
+            background: #bbb;
+        } 
+    }
+}
+
 .m {
     &-mt {
         &-30 {

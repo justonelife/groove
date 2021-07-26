@@ -20,7 +20,7 @@ $item-height: 55px;
         background-color: styles.$second-color;
         height: $item-height;
         line-height: $item-height;
-        color: #0c171d;
+        color: styles.$app-bgColor;
         text-transform: capitalize;
         text-align: center;
         text-decoration: none;
@@ -35,7 +35,7 @@ $item-height: 55px;
             // background-repeat: no-repeat;
             // background-position: 50px 3px;
             color: styles.$second-color;
-            background-color: #0c171d;
+            background-color: styles.$app-bgColor;
             position: relative;
             &::before, &::after {
                 content: "";
@@ -49,11 +49,11 @@ $item-height: 55px;
             }
             &::before {
                 bottom: 100%;
-                box-shadow: 15px 15px #0c171d;
+                box-shadow: 15px 15px styles.$app-bgColor;
             }
             &::after {
                 top: 100%;
-                box-shadow: 15px -15px #0c171d;
+                box-shadow: 15px -15px styles.$app-bgColor;
             }
         }
     }

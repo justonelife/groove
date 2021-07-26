@@ -6,6 +6,11 @@ import { PersonalListComponent } from './components/personal-list/personal-list.
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/explore',
+    pathMatch: 'full'
+  },
+  {
     path: 'explore', 
     component: ExploreComponent,
     pathMatch: 'full'

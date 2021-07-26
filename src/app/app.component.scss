@@ -15,5 +15,9 @@ $main-height: calc(100vh - #{player.$height});
         &__header {
             height: header.$height;
         }
+        &__content {
+            height: calc(100% - #{header.$height});
+            overflow-y: scroll;
+        }
     }
 }
