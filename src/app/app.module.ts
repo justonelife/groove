@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavModule } from './components/nav/nav.module';
 import { ExploreModule } from './components/explore/explore.module';
 import { HeaderBarComponent } from './components/header-bar/header-bar.component';
+import { PersonalListModule } from './components/personal-list/personal-list.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeaderBarComponent } from './components/header-bar/header-bar.component
     PlayerBarModule,
     FontAwesomeModule,
     NavModule,
-    ExploreModule
+    ExploreModule,
+    PersonalListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
