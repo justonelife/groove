@@ -1,14 +1,14 @@
 @use '../../../styles.scss';
 
-$logo-size: 150px;
-$width: 320px;
-$item-height: 55px;
+$logo-size: 80px;
+$width: 250px;
+$item-height: 40px;
 
 .nav {
     background: styles.$second-color;
     height: 100%;
     width: $width;
-    padding: 20px 0;
+    padding: 10px 0;
     &__content {
         width: 100%;
         display: flex;
@@ -24,7 +24,7 @@ $item-height: 55px;
         text-transform: capitalize;
         text-align: center;
         text-decoration: none;
-        font-size: 19px;
+        font-size: styles.$app-fontSize-normal;
         letter-spacing: 1px;
         border-radius: 17px;
         cursor: pointer;
