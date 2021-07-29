@@ -4,6 +4,7 @@ $main-color--text: #fff;
 $second-color: #fbcc4b;
 $second-color--dark: #fbc123;
 $app-bgColor: #12212a;
+$app-fontSize-normal: 14px;
 
 * {
     margin: 0;
@@ -56,8 +57,8 @@ span.material-icons {
     }
 
     &-btn {
-        height: 50px;
-        width: 50px;
+        height: 35px;
+        width: 35px;
         cursor: pointer;
         background: #3498db;
         color: #fff;
@@ -75,16 +76,16 @@ span.material-icons {
     &-fake-input {
         height: 100%;
         padding: 0 25px;
-        border-radius: 20px;
-        width: 530px;
+        border-radius: 10px;
+        width: 480px;
         input {
             height: 100%;
             width: 100%;
             background: transparent;
             color: #fff;
-            font-size: 19px;
+            font-size: $app-fontSize-normal;
             &::placeholder {
-                font-size: 19px;
+                font-size: $app-fontSize-normal;
                 color: #ffffffc4;
             }
             &:focus {

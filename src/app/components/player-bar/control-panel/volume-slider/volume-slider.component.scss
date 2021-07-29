@@ -2,7 +2,7 @@
 
 $button-background: transparent;
 $button-size: 30px;
-$button-font: 16px;
+$button-font: 12px;
 
 .volume {
     height: 100%;
@@ -12,7 +12,7 @@ $button-font: 16px;
     justify-content: center;
 
     button {
-        width: 2 * $button-size;
+        width: 4/3 * $button-size;
         height: $button-size;
         line-height: $button-size;
         font-size: $button-font;
